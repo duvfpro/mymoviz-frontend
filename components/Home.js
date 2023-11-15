@@ -39,7 +39,7 @@ function Home() {
 
 
   useEffect(() => {
-    fetch('https://mymoviz-backend-lemon.vercel.app/movies')
+    fetch('mymoviz-backend-lemon.vercel.app/movies')
       .then(response => response.json())
       .then(data => {
         const formatedData = data.movies.map(movie => {
